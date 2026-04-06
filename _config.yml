@@ -1,7 +1,7 @@
 title: DELRIUM
 description: Visual Rock / Metalcore Band from Seoul, Korea
-baseurl: "/delrium"
-url: "https://cokez3r0.github.io"
+baseurl: ""
+url: "https://delrium.com"
 
 supabase_url: "https://YOUR_PROJECT.supabase.co"
 supabase_anon_key: "YOUR_ANON_KEY"
