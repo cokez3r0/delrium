@@ -1,0 +1,29 @@
+title: DELRIUM
+description: Visual Rock / Metalcore Band from Seoul, Korea
+baseurl: "/delrium"
+url: "https://cokez3r0.github.io"
+
+# Supabase 설정 — 나중에 아래 값을 교체하세요
+supabase_url: "https://YOUR_PROJECT.supabase.co"
+supabase_anon_key: "YOUR_ANON_KEY"
+
+# SNS 링크 — 실제 URL로 교체하세요
+social:
+  instagram: "https://instagram.com/delrium"
+  twitter:   "https://twitter.com/delrium"
+  facebook:  "https://facebook.com/delrium"
+  youtube:   "https://youtube.com/@delrium"
+  email:     "contact@delrium.com"
+
+# 스트리밍 링크 — 실제 URL로 교체하세요
+streaming:
+  spotify:     "#"
+  melon:       "#"
+  apple_music: "#"
+  genie:       "#"
+  bugs:        "#"
+  flo:         "#"
+  vibe:        "#"
+
+plugins:
+  - jekyll-seo-tag

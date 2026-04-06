@@ -1,0 +1,12 @@
+# YouTube 영상 ID를 입력하세요 (youtu.be/XXXXXXX 에서 XXXXXXX 부분)
+- id: "VIDEO_ID_1"
+  title: "Amnesia [25 Taiwan Live]"
+  channel: "DELRIUM Official"
+
+- id: "VIDEO_ID_2"
+  title: "MetalRemains Interview - Asia Metal Festival"
+  channel: "Metal Remains"
+
+- id: "VIDEO_ID_3"
+  title: "DELRIUM(델리움) - Lucifer [Bass Playthrough]"
+  channel: "DELRIUM"

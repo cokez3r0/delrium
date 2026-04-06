@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+  <!-- Supabase JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- Supabase 설정값 주입 -->
+  <script>
+    window.SUPABASE_URL     = "{{ site.supabase_url }}";
+    window.SUPABASE_ANON_KEY = "{{ site.supabase_anon_key }}";
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="{{ site.baseurl }}/">DELRIUM</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#members">Members</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#streaming">Streaming</a></li>
+    <li><a href="#guestbook">Guestbook</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="메뉴">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+{{ content }}
+
+<footer>
+  &copy; 2026 DELRIUM &nbsp;·&nbsp; Visual Rock / Metalcore &nbsp;·&nbsp; Seoul, Korea
+</footer>
+
+<script>
+  // 햄버거 메뉴
+  const btn  = document.getElementById('hamburger');
+  const menu = document.getElementById('nav-links');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      menu.classList.remove('open');
+    });
+  });
+
+  // 스크롤 페이드인
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+<script src="{{ site.baseurl }}/assets/js/guestbook.js"></script>
+</body>
+</html>
