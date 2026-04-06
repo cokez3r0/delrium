@@ -28,8 +28,6 @@ layout: default
       <span class="tag">Visual Rock</span>
       <span class="tag">Metalcore</span>
       <span class="tag">Seoul, Korea</span>
-      <span class="tag">Dingwall Bass</span>
-      <span class="tag">ESP Guitar</span>
     </div>
   </div>
 </section>
@@ -43,12 +41,10 @@ layout: default
       <div class="member-card">
         <p class="member-name">SJ Hann</p>
         <p class="member-role">Bass · Leader</p>
-        <p class="member-gear">Dingwall Bass</p>
       </div>
       <div class="member-card">
         <p class="member-name">ch!ka</p>
         <p class="member-role">Guitar</p>
-        <p class="member-gear">ESP Guitar</p>
       </div>
       <div class="member-card">
         <p class="member-name">silva</p>
