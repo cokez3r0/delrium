@@ -5,8 +5,7 @@ layout: default
 <!-- HERO -->
 <section id="hero">
   <p class="hero-tag">Visual Rock / Metalcore &nbsp;·&nbsp; Seoul, Korea</p>
-  <h1 class="hero-title">DELRIUM</h1>
-  <p class="hero-sub">델리움</p>
+  <img class="hero-logo" src="{{ site.baseurl }}/assets/images/delrium_logo.png" alt="DELRIUM" />
   <div class="hero-btns">
     <a class="btn btn-primary" href="#schedule">Live Schedule</a>
     <a class="btn" href="{{ site.social.instagram }}" target="_blank">Instagram</a>

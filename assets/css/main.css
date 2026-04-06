@@ -107,14 +107,10 @@ nav {
   margin-bottom: 1.2rem;
 }
 
-.hero-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: clamp(3rem, 12vw, 8rem);
-  letter-spacing: 10px;
-  color: #fff;
-  line-height: 1.1;
+.hero-logo {
+  width: clamp(240px, 60vw, 640px);
+  height: auto;
   margin-bottom: .6rem;
-  text-shadow: 0 0 40px rgba(192,57,43,0.4);
 }
 
 .hero-sub {
