@@ -133,7 +133,6 @@ layout: default
     <form class="guestbook-form" id="gb-form">
       <input class="gb-input" id="gb-name" type="text" placeholder="이름" maxlength="30" required />
       <textarea class="gb-input" id="gb-msg" placeholder="메시지를 남겨주세요" maxlength="300" required></textarea>
-      <p class="gb-notice">* 확인 후 게시됩니다.</p>
       <button class="btn btn-primary" id="gb-submit" type="submit">남기기</button>
     </form>
     <div class="gb-list" id="gb-list"></div>
