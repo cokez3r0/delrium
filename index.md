@@ -21,10 +21,9 @@ layout: default
     <h2 class="section-title">About</h2>
     <div class="section-line"></div>
     <p class="about-text">
-      Seoul을 기반으로 활동하는 Visual Rock / Metalcore 밴드.
-      S.J_Hann과 c h ! k a로 이루어진 듀오로, 오리지널 곡 창작, 라이브 퍼포먼스,
-      악기 플레이스루 콘텐츠를 제작하고 있습니다.
-      Emergenza Festival 등 국내외 메탈 씬에서 활발히 활동 중입니다.
+      When reality cracks,<br>
+      whispers through the pain.<br>
+      come closer, and burn with us.
     </p>
     <div class="about-tags">
       <span class="tag">Visual Rock</span>
@@ -43,14 +42,22 @@ layout: default
     <div class="section-line"></div>
     <div class="members-grid">
       <div class="member-card">
-        <p class="member-name">S.J_Hann</p>
-        <p class="member-role">Guitar / Vocal</p>
+        <p class="member-name">SJ Hann</p>
+        <p class="member-role">Bass · Leader</p>
+        <p class="member-gear">Dingwall Bass</p>
+      </div>
+      <div class="member-card">
+        <p class="member-name">ch!ka</p>
+        <p class="member-role">Guitar</p>
         <p class="member-gear">ESP Guitar</p>
       </div>
       <div class="member-card">
-        <p class="member-name">c h ! k a</p>
-        <p class="member-role">Bass / Vocal</p>
-        <p class="member-gear">Dingwall Bass</p>
+        <p class="member-name">silva</p>
+        <p class="member-role">Vocal</p>
+      </div>
+      <div class="member-card">
+        <p class="member-name">H00n</p>
+        <p class="member-role">Drums</p>
       </div>
     </div>
   </div>
