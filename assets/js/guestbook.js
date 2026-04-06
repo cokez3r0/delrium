@@ -7,7 +7,7 @@
 
   if (!url || url.includes('YOUR_PROJECT') || !key || key.includes('YOUR_ANON')) {
     document.getElementById('gb-list').innerHTML =
-      '<p class="gb-empty">방명록 설정이 필요합니다. (_config.yml 에 Supabase 정보를 입력하세요)</p>';
+      '<p class="gb-empty"> </p>';
     return;
   }
 
