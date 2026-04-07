@@ -617,7 +617,7 @@ footer {
 }
 
 /* ── MOBILE ── */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .nav-links { display: none; }
   .nav-links.open {
     display: flex;
