@@ -40,7 +40,7 @@ layout: default
     <div class="members-grid">
       <div class="member-card">
         <p class="member-name">SJ Hann</p>
-        <p class="member-role">Bass · Leader</p>
+        <p class="member-role">Bass</p>
       </div>
       <div class="member-card">
         <p class="member-name">ch!ka</p>
@@ -67,7 +67,11 @@ layout: default
     <div class="month-block">
       <p class="month-label">{{ month.month }}</p>
       {% for show in month.shows %}
-      <div class="show-item">
+      <div class="show-item"
+        {% if show.popup %}
+          onclick="openShowPopup({{ show.popup.title | jsonify }}, {{ show.popup.info | newline_to_br | strip_newlines | jsonify }})" style="cursor:pointer"
+        {% endif %}
+      >
         <div class="show-date">
           {{ show.date }}<br>
           <span class="show-day">{{ show.day }}</span>
@@ -141,6 +145,15 @@ layout: default
 
 <!-- CONTACT -->
 <section id="contact">
+
+<!-- Show Popup Modal -->
+<div class="modal-overlay" id="show-modal" onclick="if(event.target===this)closeShowPopup()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeShowPopup()">&times;</button>
+    <h3 class="modal-title" id="modal-title"></h3>
+    <p class="modal-info" id="modal-info"></p>
+  </div>
+</div>
   <div class="section-wrap fade-in">
     <h2 class="section-title">Contact</h2>
     <div class="section-line"></div>

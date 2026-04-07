@@ -68,5 +68,15 @@
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
 <script src="{{ site.baseurl }}/assets/js/guestbook.js"></script>
+<script>
+function openShowPopup(title, info) {
+  document.getElementById('modal-title').textContent = title;
+  document.getElementById('modal-info').innerHTML = info.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" style="color:var(--red)">$1</a>');
+  document.getElementById('show-modal').classList.add('open');
+}
+function closeShowPopup() {
+  document.getElementById('show-modal').classList.remove('open');
+}
+</script>
 </body>
 </html>

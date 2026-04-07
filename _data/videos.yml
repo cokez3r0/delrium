@@ -1,12 +1,19 @@
-# YouTube 영상 ID를 입력하세요 (youtu.be/XXXXXXX 에서 XXXXXXX 부분)
-- id: "VIDEO_ID_1"
+- id: "WHx6ovH_LDc"
   title: "Amnesia [25 Taiwan Live]"
   channel: "DELRIUM Official"
 
-- id: "VIDEO_ID_2"
+- id: "pxZJUf-FN18"
   title: "MetalRemains Interview - Asia Metal Festival"
   channel: "Metal Remains"
 
-- id: "VIDEO_ID_3"
+- id: "PRkFry4YNAU"
   title: "DELRIUM(델리움) - Lucifer [Bass Playthrough]"
+  channel: "DELRIUM"
+
+- id: "KYR6lYLNNhg"
+  title: "DELRIUM(델리움) - Lucifer [Guitar Playthrough]"
+  channel: "DELRIUM"
+
+- id: "cxx3rh6_oJs"
+  title: "DELRIUM(델리움) - ONE DAY (회색기류 OST)"
   channel: "DELRIUM"

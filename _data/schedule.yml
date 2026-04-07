@@ -10,7 +10,27 @@
       day: "Sat"
       venue: "@JS Art Hall"
       time: "18:00"
-      ticket: "#"
+      popup:
+        title: "2026.04.18 (SAT) PM 06:00 목동 JS ART HALL"
+        info: |
+          주최: SUPERSONIC WAVE ENTERTAINMENT
+
+          예매: 55,000원 / 현매: 65,000원
+          공연장주소: 양천구 등촌로 36지하 Tel 02-6734-4666
+
+          ▸ LINE UP
+          NIGHT HOWLER / CASUALLY CONNECTED / PHANTOM LUNATICS
+          DELRIUM / LOSS OF INFECTION / OCEAN HARVEST (FROM USA)
+
+          ▸ 티켓 예매
+          https://smartstore.naver.com/leebeau/products/13262825426
+
+          ▸ 무통장 예매
+          제일은행 401-20-323713 이종안
+          예매문의: 010-5302-6747 / 카톡: zpc652
+
+          이체 후 공연명/성함/전번 뒤 4자리/매수/응원하는 밴드를
+          반드시 문자나 카톡으로 남겨주세요
 
 - month: May 2026
   shows:
