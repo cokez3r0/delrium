@@ -69,7 +69,9 @@ layout: default
       {% for show in month.shows %}
       <div class="show-item"
         {% if show.popup %}
-          onclick="openShowPopup({{ show.popup.title | jsonify }}, {{ show.popup.info | newline_to_br | strip_newlines | jsonify }})" style="cursor:pointer"
+          data-popup-title="{{ show.popup.title }}"
+          data-popup-info="{{ show.popup.info | xml_escape }}"
+          style="cursor:pointer"
         {% endif %}
       >
         <div class="show-date">

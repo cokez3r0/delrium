@@ -77,6 +77,13 @@ function openShowPopup(title, info) {
 function closeShowPopup() {
   document.getElementById('show-modal').classList.remove('open');
 }
+document.querySelectorAll('[data-popup-title]').forEach(el => {
+  el.addEventListener('click', () => {
+    const title = el.dataset.popupTitle;
+    const info = el.dataset.popupInfo.replace(/\n/g, '<br>');
+    openShowPopup(title, info);
+  });
+});
 </script>
 </body>
 </html>
