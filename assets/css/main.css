@@ -124,7 +124,7 @@ nav {
 .hero-logo {
   width: clamp(240px, 60vw, 640px);
   height: auto;
-  margin-top: 6rem;
+  margin-top: 16rem;
   margin-bottom: .6rem;
   filter: invert(1);
 }
