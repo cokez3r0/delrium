@@ -13,6 +13,7 @@ layout: default
     <a class="btn btn-icon" href="{{ site.social.instagram }}" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
     <a class="btn btn-icon" href="{{ site.social.twitter }}" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
     <a class="btn btn-icon" href="{{ site.social.youtube }}" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    <a class="btn btn-icon" href="https://linktr.ee/delrium" target="_blank" aria-label="Linktree"><i class="fa-solid fa-link"></i></a>
   </div>
 </section>
 

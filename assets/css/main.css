@@ -91,7 +91,7 @@ nav {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
   padding: 6rem 2rem 4rem;
@@ -542,7 +542,7 @@ textarea.gb-input { resize: vertical; min-height: 90px; }
 
 /* ── CALENDAR ── */
 .schedule-calendar {
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 .cal-nav {
   display: flex;
