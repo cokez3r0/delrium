@@ -13,15 +13,14 @@ social:
   youtube:   "https://www.youtube.com/@banddelrium"
   email:     "band.delrium@gmail.com"
 
-# 스트리밍 링크 — 실제 URL로 교체하세요
 streaming:
-  spotify:     "#"
-  melon:       "#"
-  apple_music: "#"
-  genie:       "#"
-  bugs:        "#"
-  flo:         "#"
-  vibe:        "#"
+  spotify:     "https://open.spotify.com/artist/0Eff7ox1Ac78Uh7Z3UgUpN"
+  melon:       "https://www.melon.com/artist/timeline.htm?artistId=3116709"
+  apple_music: "https://music.apple.com/kr/artist/delrium/1637030648"
+  genie:       "http://genie.co.kr/YRSYA1"
+  bugs:        "https://music.bugs.co.kr/artist/20196230"
+  flo:         "https://www.music-flo.com/detail/artist/408125034/track?sortType=POPULARITY&roleType=ALL"
+  vibe:        "https://vibe.naver.com/artist/5666625"
 
 plugins:
   - jekyll-seo-tag

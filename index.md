@@ -8,9 +8,9 @@ layout: default
   <img class="hero-logo" src="{{ site.baseurl }}/assets/images/delrium_logo.png" alt="DELRIUM" />
   <div class="hero-btns">
     <a class="btn btn-primary" href="#schedule">Live Schedule</a>
-    <a class="btn" href="{{ site.social.instagram }}" target="_blank">Instagram</a>
-    <a class="btn" href="{{ site.social.twitter }}" target="_blank">X</a>
-    <a class="btn" href="{{ site.social.youtube }}" target="_blank">YouTube</a>
+    <a class="btn btn-icon" href="{{ site.social.instagram }}" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="btn btn-icon" href="{{ site.social.twitter }}" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+    <a class="btn btn-icon" href="{{ site.social.youtube }}" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
   </div>
 </section>
 
