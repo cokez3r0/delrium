@@ -637,6 +637,6 @@ footer {
   .members-grid { grid-template-columns: repeat(2, 1fr); }
   #hero { min-height: 100vh; justify-content: space-between; padding-top: 5rem; padding-bottom: 3rem; }
   #hero::before { background-image: url('../images/260404_origin_profile_phone.jpg'); background-size: cover; background-position: center center; }
-  .hero-tag { margin-bottom: auto; }
+  .hero-tag { margin-top: auto; margin-bottom: auto; }
   .hero-logo { margin-top: 0; }
 }
