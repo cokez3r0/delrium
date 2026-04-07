@@ -8,6 +8,8 @@ layout: default
   <img class="hero-logo" src="{{ site.baseurl }}/assets/images/delrium_logo.png" alt="DELRIUM" />
   <div class="hero-btns">
     <a class="btn btn-primary" href="#schedule">Live Schedule</a>
+  </div>
+  <div class="hero-socials">
     <a class="btn btn-icon" href="{{ site.social.instagram }}" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
     <a class="btn btn-icon" href="{{ site.social.twitter }}" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
     <a class="btn btn-icon" href="{{ site.social.youtube }}" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
@@ -63,13 +65,14 @@ layout: default
   <div class="section-wrap fade-in">
     <h2 class="section-title">Live Schedule</h2>
     <div class="section-line"></div>
+    <div class="schedule-calendar" id="schedule-cal"></div>
     {% for month in site.data.schedule %}
     <div class="month-block">
       <p class="month-label">{{ month.month }}</p>
       {% for show in month.shows %}
       <div class="show-row {% if show.poster %}has-poster{% endif %}">
         {% if show.poster %}
-        <img class="show-poster" src="{{ site.baseurl }}/assets/images/{{ show.poster }}" alt="poster" />
+        <img class="show-poster" src="{{ site.baseurl }}/assets/images/{{ show.poster }}" alt="poster" onclick="openPosterModal(this.src)" style="cursor:pointer" />
         {% endif %}
         <div class="show-item"
           {% if show.popup %}
@@ -162,6 +165,11 @@ layout: default
     <h3 class="modal-title" id="modal-title"></h3>
     <p class="modal-info" id="modal-info"></p>
   </div>
+</div>
+
+<!-- Poster Modal -->
+<div class="modal-overlay" id="poster-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <img class="poster-full" id="poster-full" src="" alt="poster" />
 </div>
   <div class="section-wrap fade-in">
     <h2 class="section-title">Contact</h2>

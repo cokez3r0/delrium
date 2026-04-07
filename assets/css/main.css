@@ -142,6 +142,13 @@ nav {
   justify-content: center;
 }
 
+.hero-socials {
+  display: flex;
+  gap: .8rem;
+  justify-content: center;
+  margin-top: .8rem;
+}
+
 /* ── BUTTONS ── */
 .btn {
   display: inline-flex;
@@ -413,7 +420,6 @@ nav {
   flex-direction: column;
   gap: .7rem;
   margin-bottom: 2.5rem;
-  max-width: 500px;
 }
 
 .gb-input {
@@ -527,6 +533,65 @@ textarea.gb-input { resize: vertical; min-height: 90px; }
   color: var(--text);
   line-height: 1.8;
 }
+
+.poster-full {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+/* ── CALENDAR ── */
+.schedule-calendar {
+  margin-bottom: 2rem;
+}
+.cal-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.cal-nav button {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: .3rem .7rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.cal-nav button:hover { border-color: var(--red); }
+.cal-month-label {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+.cal-head {
+  color: var(--muted);
+  padding: .4rem 0;
+  letter-spacing: 1px;
+  font-size: 0.65rem;
+}
+.cal-day {
+  padding: .5rem 0;
+  color: var(--muted);
+}
+.cal-day.current-month { color: var(--text); }
+.cal-day.has-show {
+  color: #fff;
+  background: var(--red-dim);
+  cursor: pointer;
+  font-weight: 700;
+}
+.cal-day.has-show:hover { background: var(--red); }
+.cal-day.today { border: 1px solid var(--red); }
 
 /* ── FOOTER ── */
 footer {

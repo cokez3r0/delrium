@@ -77,6 +77,10 @@ function openShowPopup(title, info) {
 function closeShowPopup() {
   document.getElementById('show-modal').classList.remove('open');
 }
+function openPosterModal(src) {
+  document.getElementById('poster-full').src = src;
+  document.getElementById('poster-modal').classList.add('open');
+}
 document.querySelectorAll('[data-popup-title]').forEach(el => {
   el.addEventListener('click', () => {
     const title = el.dataset.popupTitle;
@@ -84,6 +88,51 @@ document.querySelectorAll('[data-popup-title]').forEach(el => {
     openShowPopup(title, info);
   });
 });
+
+// Calendar
+(function() {
+  const shows = [
+    {% for m in site.data.schedule %}{% for s in m.shows %}
+    { month: "{{ m.month }}", date: "{{ s.date }}", title: "{{ s.title | default: s.venue }}" },
+    {% endfor %}{% endfor %}
+  ];
+  function parseShowDate(monthStr, dateStr) {
+    const y = parseInt(monthStr.match(/\d{4}/)[0]);
+    const parts = dateStr.split('/');
+    return new Date(y, parseInt(parts[0]) - 1, parseInt(parts[1]));
+  }
+  const showDates = shows.map(s => parseShowDate(s.month, s.date));
+  const cal = document.getElementById('schedule-cal');
+  let cur = new Date();
+  function render() {
+    const y = cur.getFullYear(), m = cur.getMonth();
+    const first = new Date(y, m, 1), last = new Date(y, m + 1, 0);
+    const today = new Date();
+    const days = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
+    let html = `<div class="cal-nav">
+      <button onclick="calNav(-1)">&lsaquo;</button>
+      <span class="cal-month-label">${first.toLocaleString('en',{month:'long'})} ${y}</span>
+      <button onclick="calNav(1)">&rsaquo;</button>
+    </div><div class="cal-grid">`;
+    days.forEach(d => html += `<div class="cal-head">${d}</div>`);
+    for (let i = 0; i < first.getDay(); i++) html += `<div class="cal-day"></div>`;
+    for (let d = 1; d <= last.getDate(); d++) {
+      const dt = new Date(y, m, d);
+      const isShow = showDates.some(sd => sd.getFullYear()===y && sd.getMonth()===m && sd.getDate()===d);
+      const isToday = today.getFullYear()===y && today.getMonth()===m && today.getDate()===d;
+      let cls = 'cal-day current-month';
+      if (isShow) cls += ' has-show';
+      if (isToday) cls += ' today';
+      const showInfo = isShow ? shows.find((s,i) => showDates[i].getFullYear()===y && showDates[i].getMonth()===m && showDates[i].getDate()===d) : null;
+      const title = showInfo ? showInfo.title : '';
+      html += `<div class="${cls}" ${isShow ? `title="${title}"` : ''}>${d}</div>`;
+    }
+    html += '</div>';
+    cal.innerHTML = html;
+  }
+  window.calNav = function(dir) { cur.setMonth(cur.getMonth() + dir); render(); };
+  render();
+})();
 </script>
 </body>
 </html>
