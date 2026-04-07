@@ -34,7 +34,7 @@
     }
 
     if (!data || data.length === 0) {
-      list.innerHTML = '<p class="gb-empty">아직 방명록이 비어있어요. 첫 번째로 남겨보세요!</p>';
+      list.innerHTML = '<p class="gb-empty">No voices yet — be the first to leave your mark.</p>';
       return;
     }
 
