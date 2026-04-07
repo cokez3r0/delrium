@@ -269,6 +269,21 @@ nav {
 }
 
 /* ── SCHEDULE ── */
+.show-row { margin-bottom: .5rem; }
+.show-row.has-poster {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  margin-bottom: 1rem;
+}
+.show-row.has-poster .show-item { flex: 2; margin-bottom: 0; }
+.show-poster {
+  flex: 1;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  max-height: 180px;
+}
+
 .month-block { margin-bottom: 2.5rem; }
 
 .month-label {
@@ -550,6 +565,8 @@ footer {
   }
   .hamburger { display: flex; }
   .show-item { flex-wrap: wrap; }
+  .show-row.has-poster { flex-direction: column; }
+  .show-poster { max-height: 240px; width: 100%; }
   .video-grid { grid-template-columns: 1fr; }
   .members-grid { grid-template-columns: repeat(2, 1fr); }
 }

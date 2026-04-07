@@ -6,10 +6,12 @@
       venue: "@Alive Hall"
       time: "18:30"
       ticket: "https://event-us.kr/emergenza/event/119721?utm_source=eventus&utm_medium=organic&utm_campaign=channel-event"
+      poster: "poster_0412.jpg"
     - date: "4/18"
       day: "Sat"
       venue: "@JS Art Hall"
       time: "18:00"
+      poster: "poster_0418.jpg"
       popup:
         title: "2026.04.18 (SAT) PM 06:00 목동 JS ART HALL"
         info: |

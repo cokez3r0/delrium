@@ -67,24 +67,29 @@ layout: default
     <div class="month-block">
       <p class="month-label">{{ month.month }}</p>
       {% for show in month.shows %}
-      <div class="show-item"
-        {% if show.popup %}
-          data-popup-title="{{ show.popup.title }}"
-          data-popup-info="{{ show.popup.info | xml_escape }}"
-          style="cursor:pointer"
-        {% elsif show.ticket and show.ticket != "#" %}
-          onclick="window.open('{{ show.ticket }}','_blank')" style="cursor:pointer"
+      <div class="show-row {% if show.poster %}has-poster{% endif %}">
+        <div class="show-item"
+          {% if show.popup %}
+            data-popup-title="{{ show.popup.title }}"
+            data-popup-info="{{ show.popup.info | xml_escape }}"
+            style="cursor:pointer"
+          {% elsif show.ticket and show.ticket != "#" %}
+            onclick="window.open('{{ show.ticket }}','_blank')" style="cursor:pointer"
+          {% endif %}
+        >
+          <div class="show-date">
+            {{ show.date }}<br>
+            <span class="show-day">{{ show.day }}</span>
+          </div>
+          <div class="show-info">
+            {% if show.title %}<p class="show-title">{{ show.title }}</p>{% endif %}
+            <p class="show-venue">{{ show.venue }}</p>
+          </div>
+          {% if show.time %}<span class="show-time">{{ show.time }}</span>{% endif %}
+        </div>
+        {% if show.poster %}
+        <img class="show-poster" src="{{ site.baseurl }}/assets/images/{{ show.poster }}" alt="poster" />
         {% endif %}
-      >
-        <div class="show-date">
-          {{ show.date }}<br>
-          <span class="show-day">{{ show.day }}</span>
-        </div>
-        <div class="show-info">
-          {% if show.title %}<p class="show-title">{{ show.title }}</p>{% endif %}
-          <p class="show-venue">{{ show.venue }}</p>
-        </div>
-        {% if show.time %}<span class="show-time">{{ show.time }}</span>{% endif %}
       </div>
       {% endfor %}
     </div>
