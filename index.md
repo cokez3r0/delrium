@@ -38,22 +38,22 @@ layout: default
     <h2 class="section-title">Members</h2>
     <div class="section-line"></div>
     <div class="members-grid">
-      <div class="member-card">
+      <a class="member-card" href="https://www.instagram.com/sjhann_delrium/" target="_blank">
         <p class="member-name">SJ Hann</p>
         <p class="member-role">Bass</p>
-      </div>
-      <div class="member-card">
+      </a>
+      <a class="member-card" href="https://www.instagram.com/chika_delrium/" target="_blank">
         <p class="member-name">ch!ka</p>
         <p class="member-role">Guitar</p>
-      </div>
-      <div class="member-card">
+      </a>
+      <a class="member-card" href="https://www.instagram.com/silva_delrium/" target="_blank">
         <p class="member-name">silva</p>
         <p class="member-role">Vocal</p>
-      </div>
-      <div class="member-card">
+      </a>
+      <a class="member-card" href="https://www.instagram.com/h00.00.00n_delrium/" target="_blank">
         <p class="member-name">H00n</p>
         <p class="member-role">Drums</p>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -72,6 +72,8 @@ layout: default
           data-popup-title="{{ show.popup.title }}"
           data-popup-info="{{ show.popup.info | xml_escape }}"
           style="cursor:pointer"
+        {% elsif show.ticket and show.ticket != "#" %}
+          onclick="window.open('{{ show.ticket }}','_blank')" style="cursor:pointer"
         {% endif %}
       >
         <div class="show-date">
@@ -119,14 +121,14 @@ layout: default
     <h2 class="section-title">Streaming</h2>
     <div class="section-line"></div>
     <div class="stream-grid">
-      <a class="stream-btn" href="{{ site.social.youtube }}" target="_blank">YouTube</a>
-      <a class="stream-btn" href="{{ site.streaming.spotify }}" target="_blank">Spotify</a>
-      <a class="stream-btn" href="{{ site.streaming.melon }}" target="_blank">Melon</a>
-      <a class="stream-btn" href="{{ site.streaming.apple_music }}" target="_blank">Apple Music</a>
-      <a class="stream-btn" href="{{ site.streaming.genie }}" target="_blank">Genie</a>
-      <a class="stream-btn" href="{{ site.streaming.bugs }}" target="_blank">Bugs</a>
-      <a class="stream-btn" href="{{ site.streaming.flo }}" target="_blank">FLO</a>
-      <a class="stream-btn" href="{{ site.streaming.vibe }}" target="_blank">VIBE</a>
+      <a class="stream-btn" href="{{ site.social.youtube }}" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i><span>YouTube</span></a>
+      <a class="stream-btn" href="{{ site.streaming.spotify }}" target="_blank" aria-label="Spotify"><i class="fa-brands fa-spotify"></i><span>Spotify</span></a>
+      <a class="stream-btn" href="{{ site.streaming.melon }}" target="_blank" aria-label="Melon"><i class="fa-solid fa-music"></i><span>Melon</span></a>
+      <a class="stream-btn" href="{{ site.streaming.apple_music }}" target="_blank" aria-label="Apple Music"><i class="fa-brands fa-apple"></i><span>Apple Music</span></a>
+      <a class="stream-btn" href="{{ site.streaming.genie }}" target="_blank" aria-label="Genie"><i class="fa-solid fa-compact-disc"></i><span>Genie</span></a>
+      <a class="stream-btn" href="{{ site.streaming.bugs }}" target="_blank" aria-label="Bugs"><i class="fa-solid fa-headphones"></i><span>Bugs</span></a>
+      <a class="stream-btn" href="{{ site.streaming.flo }}" target="_blank" aria-label="FLO"><i class="fa-solid fa-wave-square"></i><span>FLO</span></a>
+      <a class="stream-btn" href="{{ site.streaming.vibe }}" target="_blank" aria-label="VIBE"><i class="fa-solid fa-record-vinyl"></i><span>VIBE</span></a>
     </div>
   </div>
 </section>
