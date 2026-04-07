@@ -34,7 +34,7 @@
     }
 
     if (!data || data.length === 0) {
-      list.innerHTML = '<p class="gb-empty">No voices yet — be the first to leave your mark.</p>';
+      list.innerHTML = '<p class="gb-empty">Please leave your whisper. ;P</p>';
       return;
     }
 
