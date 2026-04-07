@@ -635,7 +635,7 @@ footer {
   .show-poster { max-height: 240px; width: 100%; }
   .video-grid { grid-template-columns: 1fr; }
   .members-grid { grid-template-columns: repeat(2, 1fr); }
-  #hero { min-height: auto; aspect-ratio: 3/2; justify-content: center; padding-top: 4rem; padding-bottom: 2rem; }
-  #hero::before { background-size: cover; background-position: center top; }
-  .hero-logo { margin-top: 0; width: clamp(180px, 55vw, 300px); }
+  #hero { min-height: 100vh; justify-content: flex-end; padding-top: 4rem; }
+  #hero::before { background-size: 100% auto; background-position: center top; }
+  .hero-logo { margin-top: 0; }
 }
