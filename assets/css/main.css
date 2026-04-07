@@ -124,7 +124,7 @@ nav {
 .hero-logo {
   width: clamp(240px, 60vw, 640px);
   height: auto;
-  margin-top: 22rem;
+  margin-top: 10rem;
   margin-bottom: .6rem;
   filter: invert(1);
 }
@@ -635,7 +635,7 @@ footer {
   .show-poster { max-height: 240px; width: 100%; }
   .video-grid { grid-template-columns: 1fr; }
   .members-grid { grid-template-columns: repeat(2, 1fr); }
-  #hero { min-height: 100vh; justify-content: flex-end; }
+  #hero { min-height: 100vh; justify-content: flex-end; padding-bottom: 6rem; }
   #hero::before { background-image: url('../images/260404_origin_profile_phone.jpg'); background-size: cover; background-position: center center; }
   .hero-logo { margin-top: 0; }
 }
