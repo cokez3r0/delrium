@@ -68,6 +68,9 @@ layout: default
       <p class="month-label">{{ month.month }}</p>
       {% for show in month.shows %}
       <div class="show-row {% if show.poster %}has-poster{% endif %}">
+        {% if show.poster %}
+        <img class="show-poster" src="{{ site.baseurl }}/assets/images/{{ show.poster }}" alt="poster" />
+        {% endif %}
         <div class="show-item"
           {% if show.popup %}
             data-popup-title="{{ show.popup.title }}"
@@ -87,9 +90,6 @@ layout: default
           </div>
           {% if show.time %}<span class="show-time">{{ show.time }}</span>{% endif %}
         </div>
-        {% if show.poster %}
-        <img class="show-poster" src="{{ site.baseurl }}/assets/images/{{ show.poster }}" alt="poster" />
-        {% endif %}
       </div>
       {% endfor %}
     </div>
