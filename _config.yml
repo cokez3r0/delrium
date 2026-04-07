@@ -3,8 +3,8 @@ description: Visual Rock / Metalcore Band from Seoul, Korea
 baseurl: ""
 url: "https://delrium.com"
 
-supabase_url: "https://YOUR_PROJECT.supabase.co"
-supabase_anon_key: "YOUR_ANON_KEY"
+supabase_url: "https://zcgqqgazqnvhwbwtjgia.supabase.co"
+supabase_anon_key: "sb_publishable_bMSKLOlQOxmzFcP-QTgR3Q_JcsRyPLw"
 
 social:
   instagram: "https://www.instagram.com/delrium_official/"
