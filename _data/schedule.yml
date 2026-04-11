@@ -39,12 +39,15 @@
     - date: "5/2"
       day: "Sat"
       venue: "@Deep Purple"
+      poster: "poster_0502.png"
     - date: "5/7"
       day: "Thu"
       venue: "@Sharp"
+      poster: "poster_0507.png"
     - date: "5/9"
       day: "Sat"
       venue: "@Side by Side"
+      poster: "poster_0509.png"
 
 - month: June 2026
   shows:
