@@ -38,16 +38,60 @@
   shows:
     - date: "5/2"
       day: "Sat"
+      title: "Into The Live Vol.16"
       venue: "@Deep Purple"
+      time: "TBA"
       poster: "poster_0502.png"
+      popup:
+        title: "2026.05.02 (SAT) Into The Live Vol.16"
+        info: |
+          신촌 딥퍼플: 서대문구 연세로7안길 34-6
+
+          예매: 20,000원 / 현매: 25,000원 / 청소년: Free
+
+          예매: 우리 1002761502905 이영*
+          입금 후 문자로 입금자 성함 알려주세요
     - date: "5/7"
       day: "Thu"
+      title: "United We Stand Vol.8"
       venue: "@Sharp"
+      time: "20:30"
       poster: "poster_0507.png"
+      popup:
+        title: "United We Stand - Vol 8. Anti-Sapien Korea Tour 2026"
+        info: |
+          05/07 Thu. 8:30 PM, Seoul @club_sharp
+
+          2000 Door Open
+          2030~2100 리버랠리아
+          2120~2150 델리움
+          2200~2240 안티사피엔
+
+          ADV 30,000 / Door 35,000
+
+          ADV 예매: https://url.kr/aw85dz
+          예매 기간: 2026.04.01 ~ 2026.05.05 23:59
+
+          문의: KakaoTalk > Channel > Unis_Ent / Line > unis_ent
     - date: "5/9"
       day: "Sat"
+      title: "GA\"RAGE\" WITH BAND Vol.1"
       venue: "@Side by Side"
+      time: "17:00"
       poster: "poster_0509.png"
+      popup:
+        title: "GA\"RAGE\" WITH BAND Vol.1 - Engine vs Distortion"
+        info: |
+          2026.05.09 (토) 17:00~
+          장소: SIDEBYSIDE GARAGE CAFE
+
+          공연팀
+          - GOD OF UNIVERSE (갓오브유니버스)
+          - VERDANT CONVEX (버단컨벡스)
+          - DELRIUM (델리움)
+          - 미친딸랑이
+
+          Flea Market 입점 문의: 인스타그램 DM @sidebyside_cafe
 
 - month: June 2026
   shows:
