@@ -77,7 +77,7 @@ layout: default
         {% endif %}
         <div class="show-item"
           {% if show.popup %}
-            data-popup-title="{{ show.popup.title }}"
+            data-popup-title="{{ show.popup.title | xml_escape }}"
             data-popup-info="{{ show.popup.info | xml_escape }}"
             style="cursor:pointer"
           {% elsif show.ticket and show.ticket != "#" %}

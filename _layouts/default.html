@@ -99,7 +99,7 @@ document.querySelectorAll('[data-popup-title]').forEach(el => {
 (function() {
   const shows = [
     {% for m in site.data.schedule %}{% for s in m.shows %}
-    { month: "{{ m.month }}", date: "{{ s.date }}", title: "{{ s.title | default: s.venue }}" },
+    { month: "{{ m.month }}", date: "{{ s.date }}", title: {{ s.title | default: s.venue | jsonify }} },
     {% endfor %}{% endfor %}
   ];
   function parseShowDate(monthStr, dateStr) {
