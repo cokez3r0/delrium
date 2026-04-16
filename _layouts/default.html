@@ -99,7 +99,7 @@ document.querySelectorAll('[data-popup-title]').forEach(el => {
 (function() {
   const shows = [
     {% for m in site.data.schedule %}{% for s in m.shows %}
-    { month: "{{ m.month }}", date: "{{ s.date }}", title: {{ s.title | default: s.venue | jsonify }} },
+    { month: "{{ m.month }}", date: "{{ s.date }}", title: {{ s.title | default: s.venue | jsonify }}, poster: "{% if s.poster %}{{ site.baseurl }}/assets/images/{{ s.poster }}{% endif %}" },
     {% endfor %}{% endfor %}
   ];
   function parseShowDate(monthStr, dateStr) {
@@ -114,6 +114,7 @@ document.querySelectorAll('[data-popup-title]').forEach(el => {
     const y = cur.getFullYear(), m = cur.getMonth();
     const first = new Date(y, m, 1), last = new Date(y, m + 1, 0);
     const today = new Date();
+    const todayNorm = new Date(today.getFullYear(), today.getMonth(), today.getDate());
     const days = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
     let html = `<div class="cal-nav">
       <button onclick="calNav(-1)">&lsaquo;</button>
@@ -124,6 +125,7 @@ document.querySelectorAll('[data-popup-title]').forEach(el => {
     for (let i = 0; i < first.getDay(); i++) html += `<div class="cal-day"></div>`;
     for (let d = 1; d <= last.getDate(); d++) {
       const dt = new Date(y, m, d);
+      const isPast = dt < todayNorm;
       const isShow = showDates.some(sd => sd.getFullYear()===y && sd.getMonth()===m && sd.getDate()===d);
       const isToday = today.getFullYear()===y && today.getMonth()===m && today.getDate()===d;
       let cls = 'cal-day current-month';
@@ -131,13 +133,31 @@ document.querySelectorAll('[data-popup-title]').forEach(el => {
       if (isToday) cls += ' today';
       const showInfo = isShow ? shows.find((s,i) => showDates[i].getFullYear()===y && showDates[i].getMonth()===m && showDates[i].getDate()===d) : null;
       const title = showInfo ? showInfo.title : '';
-      html += `<div class="${cls}" ${isShow ? `title="${title}"` : ''}>${d}</div>`;
+      const poster = showInfo ? showInfo.poster : '';
+      const clickAttr = (isShow && isPast && poster) ? `onclick="openPosterModal('${poster}')"` : '';
+      html += `<div class="${cls}" ${title ? `title="${title}"` : ''} ${clickAttr}>${d}</div>`;
     }
     html += '</div>';
     cal.innerHTML = html;
   }
   window.calNav = function(dir) { cur.setMonth(cur.getMonth() + dir); render(); };
   render();
+})();
+</script>
+<script>
+// 지난 공연 목록에서 제거
+(function() {
+  var today = new Date();
+  today.setHours(0,0,0,0);
+  document.querySelectorAll('.show-row[data-show-year]').forEach(function(row) {
+    var year = parseInt(row.dataset.showYear);
+    var parts = row.dataset.showMd.split('/');
+    var showDate = new Date(year, parseInt(parts[0]) - 1, parseInt(parts[1]));
+    if (showDate < today) row.remove();
+  });
+  document.querySelectorAll('.month-block').forEach(function(block) {
+    if (!block.querySelector('.show-row')) block.remove();
+  });
 })();
 </script>
 </body>

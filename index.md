@@ -71,7 +71,7 @@ layout: default
     <div class="month-block">
       <p class="month-label">{{ month.month }}</p>
       {% for show in month.shows %}
-      <div class="show-row {% if show.poster %}has-poster{% endif %}">
+      <div class="show-row {% if show.poster %}has-poster{% endif %}" data-show-year="{{ month.month | split: ' ' | last }}" data-show-md="{{ show.date }}">
         {% if show.poster %}
         <img class="show-poster" src="{{ site.baseurl }}/assets/images/{{ show.poster }}" alt="poster" onclick="openPosterModal(this.src)" style="cursor:pointer" />
         {% endif %}
