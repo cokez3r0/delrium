@@ -14,6 +14,7 @@ layout: default
     <a class="btn btn-icon" href="{{ site.social.twitter }}" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
     <a class="btn btn-icon" href="{{ site.social.youtube }}" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
     <a class="btn btn-icon" href="https://linktr.ee/delrium" target="_blank" aria-label="Linktree"><i class="fa-solid fa-tree"></i></a>
+    <a class="btn btn-icon" href="{{ site.streaming.spotify }}" target="_blank" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
   </div>
 </section>
 
