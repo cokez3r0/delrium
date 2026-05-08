@@ -110,11 +110,10 @@ layout: default
     <div class="video-grid">
       {% for v in site.data.videos %}
       <div class="video-card">
-        <iframe
-          src="https://www.youtube.com/embed/{{ v.id }}"
-          title="{{ v.title }}"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+        <button type="button" class="video-thumb" data-video-id="{{ v.id }}" aria-label="Play {{ v.title | escape }}">
+          <img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="{{ v.title | escape }}" loading="lazy" />
+          <span class="video-play" aria-hidden="true"></span>
+        </button>
         <div class="video-info">
           <p class="video-title">{{ v.title }}</p>
           <p class="video-ch">{{ v.channel }}</p>

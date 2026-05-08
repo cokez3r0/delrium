@@ -73,6 +73,21 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
+<script>
+// Lite YouTube embed: swap thumbnail for iframe on click
+document.querySelectorAll('.video-thumb').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const id = btn.dataset.videoId;
+    if (!id) return;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+    iframe.title = btn.getAttribute('aria-label') || '';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.setAttribute('allowfullscreen', '');
+    btn.replaceWith(iframe);
+  });
+});
+</script>
 <script src="{{ site.baseurl }}/assets/js/guestbook.js"></script>
 <script>
 function openShowPopup(title, info) {
