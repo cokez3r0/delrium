@@ -457,19 +457,25 @@ nav {
 }
 
 .video-info {
-  padding: .8rem 1rem;
+  padding: .9rem 1rem 1rem;
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .video-title {
-  font-size: 0.82rem;
-  font-weight: 700;
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--text);
-  margin-bottom: .2rem;
+  margin-bottom: .35rem;
+  letter-spacing: 0.1px;
+  line-height: 1.45;
+  white-space: pre-line;
 }
 
 .video-ch {
   font-size: 0.72rem;
   color: var(--muted);
+  font-weight: 400;
+  letter-spacing: 0.4px;
 }
 
 /* ── STREAMING ── */
