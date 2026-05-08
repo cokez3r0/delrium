@@ -93,8 +93,15 @@
 
           Flea Market 입점 문의: 인스타그램 DM @sidebyside_cafe
 
-- month: June 2026
+- month: September 2026
   shows:
-    - date: "6/20"
+    - date: "9/12"
       day: "Sat"
-      venue: "@GEEK Live House"
+      venue: "TBA"
+      popup:
+        title: "2026.09.12 (SAT)"
+        info: |
+          詳細未定。でも、お楽しみに。
+          something special is coming.
+
+          Details TBA. Stay tuned.
