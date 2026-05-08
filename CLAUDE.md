@@ -11,6 +11,10 @@ Static site for **DELRIUM** — a Visual Rock / Metalcore band based in Seoul, K
 - **Stack**: Jekyll 4.3 + GitHub Pages, Ruby 3.1
 - **Primary language for content/commits**: Korean
 
+## Commit messages
+
+The repo is **public**. Write commit messages in English using short conventional-commit prefixes (`feat:`, `fix:`, `docs:`, `style:`, etc.) and keep them understated — describe the shape of the change, not unannounced lineup, guest bands, or popup content the band hasn't publicly revealed.
+
 ## Commands
 
 ```bash
