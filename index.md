@@ -92,6 +92,7 @@ layout: default
           <div class="show-info">
             {% if show.title %}<p class="show-title">{{ show.title }}</p>{% endif %}
             <p class="show-venue">{{ show.venue }}</p>
+            {% if show.note %}<p class="show-note">{{ show.note }}</p>{% endif %}
           </div>
           {% if show.time %}<span class="show-time">{{ show.time }}</span>{% endif %}
         </div>

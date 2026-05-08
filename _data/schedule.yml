@@ -98,6 +98,7 @@
     - date: "9/12"
       day: "Sat"
       venue: "TBA"
+      note: "詳細未定。お楽しみに。"
       popup:
         title: "2026.09.12 (SAT)"
         info: |
