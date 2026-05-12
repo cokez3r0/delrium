@@ -295,7 +295,7 @@ nav {
 .month-block { margin-bottom: 2.5rem; }
 
 .month-label {
-  font-size: 0.7rem;
+  font-size: 0.95rem;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--red);
