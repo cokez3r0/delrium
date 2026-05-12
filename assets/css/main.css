@@ -122,10 +122,10 @@ nav {
 }
 
 .hero-logo {
-  width: clamp(240px, 60vw, 690px);
+  width: clamp(320px, 70vw, 820px);
   height: auto;
-  margin-top: 36rem;
-  margin-bottom: .6rem;
+  margin-top: 8rem;
+  margin-bottom: 24rem;
   filter: invert(1);
 }
 
@@ -286,10 +286,11 @@ nav {
 }
 .show-row.has-poster .show-item { flex: 2; margin-bottom: 0; }
 .show-poster {
-  flex: 1;
-  object-fit: cover;
+  flex: 0 0 auto;
+  align-self: center;
+  height: 180px;
+  width: auto;
   border: 1px solid var(--border);
-  max-height: 180px;
 }
 
 .month-block { margin-bottom: 2.5rem; }
@@ -730,11 +731,11 @@ footer {
   .hamburger { display: flex; }
   .show-item { flex-wrap: wrap; }
   .show-row.has-poster { flex-direction: column; }
-  .show-poster { max-height: 240px; width: 100%; }
+  .show-poster { height: auto; width: auto; max-width: 100%; max-height: 360px; margin: 0 auto; }
   .video-grid { grid-template-columns: 1fr; }
   .members-grid { grid-template-columns: repeat(2, 1fr); }
   #hero { min-height: 100vh; justify-content: space-between; padding-top: 5rem; padding-bottom: 3rem; }
   #hero::before { background-image: url('../images/2026_delrium_profile_03.jpg'); background-size: cover; background-position: center center; }
   .hero-tag { margin-top: auto; margin-bottom: auto; }
-  .hero-logo { margin-top: 0; }
+  .hero-logo { margin-top: 0; margin-bottom: 0; }
 }
