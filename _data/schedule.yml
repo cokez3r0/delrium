@@ -93,16 +93,37 @@
 
           Flea Market 입점 문의: 인스타그램 DM @sidebyside_cafe
 
-- month: September 2026
+- month: June 2026
   shows:
-    - date: "9/12"
+    - date: "6/13"
       day: "Sat"
-      venue: "TBA"
+      venue: "@Alleyway Taphouse"
       note: "詳細未定。お楽しみに。"
       popup:
-        title: "2026.09.12 (SAT)"
+        title: "2026.06.13 (SAT) @Alleyway Taphouse"
         info: |
           詳細未定。でも、お楽しみに。
           something special is coming.
 
           Details TBA. Stay tuned.
+
+- month: August 2026
+  shows:
+    - date: "8/2"
+      day: "Sun"
+      venue: "@AOR"
+      note: "詳細未定。お楽しみに。"
+      popup:
+        title: "2026.08.02 (SUN) @AOR"
+        info: |
+          詳細未定。でも、お楽しみに。
+          something special is coming.
+
+          Details TBA. Stay tuned.
+
+- month: September 2026
+  shows:
+    - date: "9/12"
+      day: "Sat"
+      venue: "@JS Art Hall"
+      poster: "poster_0912.jpg"
