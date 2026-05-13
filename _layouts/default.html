@@ -149,7 +149,7 @@ document.querySelectorAll('[data-popup-title]').forEach(el => {
       const showInfo = isShow ? shows.find((s,i) => showDates[i].getFullYear()===y && showDates[i].getMonth()===m && showDates[i].getDate()===d) : null;
       const title = showInfo ? showInfo.title : '';
       const poster = showInfo ? showInfo.poster : '';
-      const clickAttr = (isShow && isPast && poster) ? `onclick="openPosterModal('${poster}')"` : '';
+      const clickAttr = (isShow && poster) ? `onclick="openPosterModal('${poster}')"` : '';
       html += `<div class="${cls}" ${title ? `title="${title}"` : ''} ${clickAttr}>${d}</div>`;
     }
     html += '</div>';
