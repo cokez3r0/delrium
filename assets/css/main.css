@@ -114,10 +114,6 @@ nav {
 #hero > * { position: relative; z-index: 1; }
 
 .hero-tag {
-  position: absolute;
-  top: 6.5rem;
-  left: 0;
-  right: 0;
   font-size: 0.72rem;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -127,7 +123,8 @@ nav {
 .hero-logo {
   width: clamp(280px, 60vw, 720px);
   height: auto;
-  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
   filter: invert(1);
 }
 
@@ -139,21 +136,14 @@ nav {
 }
 
 .hero-btns {
-  position: absolute;
-  bottom: 5rem;
-  left: 0;
-  right: 0;
   display: flex;
   gap: .8rem;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .hero-socials {
-  position: absolute;
-  bottom: 1.8rem;
-  left: 0;
-  right: 0;
   display: flex;
   gap: .8rem;
   justify-content: center;
@@ -744,9 +734,6 @@ footer {
   .video-grid { grid-template-columns: 1fr; }
   .members-grid { grid-template-columns: repeat(2, 1fr); }
   #hero { padding-top: 5rem; padding-bottom: 3rem; }
-  #hero::before { background-size: contain; background-position: center 30%; opacity: 0.45; }
-  .hero-tag { top: 5.5rem; }
+  #hero::before { background-size: contain; background-position: center 35%; opacity: 0.45; }
   .hero-logo { width: 75vw; }
-  .hero-btns { bottom: 4.5rem; }
-  .hero-socials { bottom: 1.5rem; }
 }
