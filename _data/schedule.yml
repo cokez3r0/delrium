@@ -106,6 +106,17 @@
           something special is coming.
 
           Details TBA. Stay tuned.
+    - date: "6/20"
+      day: "Sat"
+      venue: "@여수 웅천상가"
+      note: "詳細未定。お楽しみに。"
+      popup:
+        title: "2026.06.20 (SAT) @여수 웅천상가"
+        info: |
+          詳細未定。でも、お楽しみに。
+          something special is coming.
+
+          Details TBA. Stay tuned.
 
 - month: August 2026
   shows:
