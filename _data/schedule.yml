@@ -99,6 +99,7 @@
       day: "Sat"
       venue: "@Alleyway Taphouse"
       note: "DECADENCE Act 1"
+      poster: "poster_0613.png"
       popup:
         title: "2026.06.13 (SAT) @Alleyway Taphouse"
         info: |
@@ -119,6 +120,7 @@
       day: "Sat"
       venue: "@여수 웅천상가"
       note: "DECADENCE Act 2"
+      poster: "poster_0620.png"
       popup:
         title: "2026.06.20 (SAT) @여수 웅천상가"
         info: |
