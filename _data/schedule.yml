@@ -134,6 +134,13 @@
           🔥 FREE 🔥 OURDOOR 🔥 LIVE 🔥
 
 
+- month: July 2026
+  shows:
+    - date: "7/4"
+      day: "Sat"
+      venue: "@HUKEZ"
+      poster: "poster_0704.png"
+
 - month: August 2026
   shows:
     - date: "8/2"
@@ -147,6 +154,9 @@
           something special is coming.
 
           Details TBA. Stay tuned.
+    - date: "8/29"
+      day: "Sat"
+      venue: "@여수"
 
 - month: September 2026
   shows:
