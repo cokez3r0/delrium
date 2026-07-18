@@ -123,8 +123,7 @@ nav {
 .hero-logo {
   width: clamp(280px, 60vw, 720px);
   height: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 1.5rem 0 2.75rem;
   filter: invert(1);
 }
 
@@ -140,13 +139,25 @@ nav {
   gap: .8rem;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.hero-btns .btn {
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  padding: .9rem 2.4rem;
 }
 
 .hero-socials {
   display: flex;
-  gap: .8rem;
+  gap: 1rem;
   justify-content: center;
+}
+
+.hero-socials .btn-icon {
+  width: 54px;
+  height: 54px;
+  font-size: 1.4rem;
 }
 
 /* ── BUTTONS ── */
