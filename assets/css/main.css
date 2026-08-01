@@ -252,7 +252,18 @@ nav {
   letter-spacing: 3px;
   color: var(--muted);
   margin: .8rem 0 2rem;
+  text-transform: uppercase;
 }
+
+.album-presave {
+  color: var(--red);
+  text-decoration: none;
+  border-bottom: 1px solid var(--red);
+  padding-bottom: 1px;
+  transition: color .2s, border-color .2s;
+}
+
+.album-presave:hover { color: #fff; border-color: #fff; }
 
 .album-teaser {
   width: min(420px, 100%);
