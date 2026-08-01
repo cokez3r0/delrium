@@ -21,9 +21,7 @@ layout: default
 <!-- ALBUM -->
 <section id="album">
   <div class="section-wrap fade-in album-wrap">
-    <p class="album-tag">1st Full Album</p>
-    <h2 class="album-title">DELUSION</h2>
-    <p class="album-date">OUT 08.24</p>
+    <h2 class="album-line">1st Full Album — DELUSION — OUT 08.24</h2>
     <p class="album-cta">
       <a class="album-presave" href="{{ site.streaming.bandcamp }}" target="_blank">Pre-order — Bandcamp</a>
       <span class="album-cta-sep">·</span>
