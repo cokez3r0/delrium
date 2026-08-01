@@ -23,8 +23,17 @@ layout: default
   <div class="section-wrap fade-in album-wrap">
     <p class="album-tag">1st Full Album</p>
     <h2 class="album-title">DELUSION</h2>
-    <p class="album-date">OUT 08.24 — <a class="album-presave" href="{{ site.streaming.spotify }}" target="_blank">PRE-SAVE NOW</a></p>
+    <p class="album-date">OUT 08.24</p>
+    <p class="album-cta">
+      <a class="album-presave" href="{{ site.streaming.bandcamp }}" target="_blank">Pre-order — Bandcamp</a>
+      <span class="album-cta-sep">·</span>
+      <a class="album-presave" href="{{ site.streaming.spotify }}" target="_blank">Pre-save — Spotify</a>
+    </p>
     <img class="album-teaser" src="{{ site.baseurl }}/assets/images/DELUSION_TEASER2.png" alt="DELRIUM 1st Full Album DELUSION — 2026.08.24 Release" onclick="openPosterModal(this.src)" style="cursor:pointer" />
+    <iframe class="album-player" loading="lazy" title="DELUSION by DELRIUM — Bandcamp"
+      src="https://bandcamp.com/EmbeddedPlayer/album=2280871481/size=large/bgcol=0d0d0d/linkcol=c0392b/artwork=small/tracklist=false/transparent=true/">
+      <a href="{{ site.streaming.bandcamp }}">DELUSION by DELRIUM</a>
+    </iframe>
   </div>
 </section>
 
@@ -143,6 +152,7 @@ layout: default
     <div class="stream-grid">
       <a class="stream-btn" href="{{ site.social.youtube }}" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i><span>YouTube</span></a>
       <a class="stream-btn" href="{{ site.streaming.spotify }}" target="_blank" aria-label="Spotify"><i class="fa-brands fa-spotify"></i><span>Spotify</span></a>
+      <a class="stream-btn" href="{{ site.streaming.bandcamp }}" target="_blank" aria-label="Bandcamp"><i class="fa-brands fa-bandcamp"></i><span>Bandcamp</span></a>
       <a class="stream-btn" href="{{ site.streaming.melon }}" target="_blank" aria-label="Melon"><i class="fa-solid fa-music"></i><span>Melon</span></a>
       <a class="stream-btn" href="{{ site.streaming.apple_music }}" target="_blank" aria-label="Apple Music"><i class="fa-brands fa-apple"></i><span>Apple Music</span></a>
       <a class="stream-btn" href="{{ site.streaming.genie }}" target="_blank" aria-label="Genie"><i class="fa-solid fa-compact-disc"></i><span>Genie</span></a>
