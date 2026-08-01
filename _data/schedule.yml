@@ -183,10 +183,40 @@
       day: "Sat"
       title: "Live in Nowon"
       venue: "@Hoi Polloi Nowon"
+      time: "20:00"
+      poster: "poster_0808.png"
+      popup:
+        title: "2026.08.08 (SAT) Live in Nowon"
+        info: |
+          @Hoi Polloi Studio
+          서울 노원구 화랑로 449 B1
+
+          DOORS 19:30 / START 20:00
+          20,000 KRW / STUDENT 15,000 KRW
+
+          ▸ LINE UP
+          DELRIUM / SNAPPY DOLL / FLEET / PURPURA
     - date: "8/15"
       day: "Sat"
       title: "Super Sonic Summer Rock Festival 2026"
       venue: "@JS Art Hall"
+      time: "18:00"
+      poster: "poster_0815.png"
+      popup:
+        title: "SUPER SONIC Summer Rock Festival 2026"
+        info: |
+          2026.08.15 (SAT) ~ 08.16 (SUN) PM 06:00
+          장소: JS ART HALL
+          ※ DELRIUM은 8/15(토) 출연
+
+          ▸ 8/15 (SAT)
+          워킹애프터유 / 델리움 / 원오프 / 켓더레인 / 안락 / 오륜구동
+
+          ▸ 8/16 (SUN)
+          바이탈디그리 / 시너 / 퍼퓨라 / 디어드민 / 티미르 / 클라프
+
+          ▸ TICKET
+          1일권 45,000원 / 2일 양일권 예매 80,000원 / 현매 55,000원
 
 - month: September 2026
   shows:

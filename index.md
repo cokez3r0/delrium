@@ -18,6 +18,16 @@ layout: default
   </div>
 </section>
 
+<!-- ALBUM -->
+<section id="album">
+  <div class="section-wrap fade-in album-wrap">
+    <p class="album-tag">1st Full Album</p>
+    <h2 class="album-title">DELUSION</h2>
+    <p class="album-date">2026.08.24 Release</p>
+    <img class="album-teaser" src="{{ site.baseurl }}/assets/images/DELUSION_TEASER2.png" alt="DELRIUM 1st Full Album DELUSION — 2026.08.24 Release" onclick="openPosterModal(this.src)" style="cursor:pointer" />
+  </div>
+</section>
+
 <!-- ABOUT -->
 <section id="about">
   <div class="section-wrap fade-in">
