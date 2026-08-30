@@ -265,9 +265,11 @@ nav {
 }
 
 .album-mv {
+  /* full-bleed: negative side margins keep the margin box at container width,
+     so flex centering holds even though the box is wider than the wrap */
   width: min(94vw, 1400px);
   aspect-ratio: 16 / 9;
-  margin: 1.6rem auto 0;
+  margin: 1.6rem calc((100% - min(94vw, 1400px)) / 2) 0;
   border: 1px solid var(--border);
 }
 
