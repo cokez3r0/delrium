@@ -21,7 +21,7 @@ layout: default
 <!-- ALBUM -->
 <section id="album">
   <div class="section-wrap fade-in album-wrap">
-    <h2 class="album-line">1st Full Album — DELUSION — OUT NOW</h2>
+    <h2 class="album-line">Scapegoat MV — OUT NOW</h2>
     <div class="album-mv">
       <button type="button" class="video-thumb" data-video-id="busSgfNS_rY" aria-label="Play [MV] DELRIUM - Scapegoat">
         <img src="https://i.ytimg.com/vi/busSgfNS_rY/maxresdefault.jpg" alt="[MV] DELRIUM - Scapegoat" loading="lazy" />

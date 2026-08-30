@@ -577,12 +577,15 @@ nav {
 .stream-flex {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: clamp(1rem, 3vw, 2.2rem);
 }
 
 .stream-cover {
-  width: min(300px, 100%);
+  /* roughly three icon rows tall; stays beside the grid on every width */
+  width: clamp(130px, 30vw, 270px);
   height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   flex-shrink: 0;
   border: 1px solid var(--border);
 }
@@ -600,10 +603,9 @@ nav {
 }
 
 @media (max-width: 720px) {
-  .stream-flex { flex-direction: column; gap: 1.6rem; }
-  .stream-cover { width: min(260px, 80%); }
-  .stream-right { width: 100%; }
-  .stream-sub { text-align: center; }
+  .stream-grid { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: .5rem; }
+  .stream-btn { padding: .7rem .4rem; }
+  .stream-sub { font-size: 0.75rem; }
 }
 
 .stream-grid {
