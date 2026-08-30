@@ -264,48 +264,27 @@ nav {
   margin-bottom: 1.4rem;
 }
 
-.album-cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  font-size: 0.8rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-}
-
-.album-cta-sep { color: var(--muted); }
-
-.album-player {
-  width: min(560px, 100%);
-  height: 120px;
-  border: 0;
-  margin-top: 1.6rem;
-}
-
-.album-presave {
-  color: var(--red);
-  text-decoration: none;
-  border-bottom: 1px solid var(--red);
-  padding-bottom: 1px;
-  transition: color .2s, border-color .2s;
-}
-
-.album-presave:hover { color: #fff; border-color: #fff; }
-
-.album-teaser {
-  width: min(420px, 100%);
-  height: auto;
-  border: 1px solid var(--border);
-}
-
 .album-mv {
-  width: min(720px, 100%);
+  width: min(94vw, 1400px);
   aspect-ratio: 16 / 9;
   margin: 1.6rem auto 0;
   border: 1px solid var(--border);
+}
+
+.album-mv .video-thumb {
+  width: 100%;
+  height: 100%;
+}
+
+.album-mv .video-thumb img,
+.album-mv .video-thumb:hover img {
+  filter: none;
+  transform: none;
+}
+
+.album-mv .video-thumb::before,
+.album-mv .video-thumb::after {
+  display: none;
 }
 
 .album-mv iframe {
@@ -593,12 +572,36 @@ nav {
 }
 
 /* ── STREAMING ── */
+.stream-flex {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.stream-cover {
+  width: min(300px, 100%);
+  height: auto;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.stream-right {
+  flex: 1;
+  min-width: 0;
+}
+
 .stream-sub {
-  text-align: center;
   color: var(--muted);
   font-size: 0.85rem;
   letter-spacing: 2px;
   margin-bottom: 1.2rem;
+}
+
+@media (max-width: 720px) {
+  .stream-flex { flex-direction: column; gap: 1.6rem; }
+  .stream-cover { width: min(260px, 80%); }
+  .stream-right { width: 100%; }
+  .stream-sub { text-align: center; }
 }
 
 .stream-grid {

@@ -285,3 +285,10 @@
       day: "Sat"
       title: "메탈해적"
       venue: "@TBA"
+    - date: "11/14"
+      day: "Sat"
+      venue: "@퍼플홀"
+      popup:
+        title: "2026.11.14 (SAT) @퍼플홀"
+        info: |
+          Details TBA. Stay tuned.

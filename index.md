@@ -22,16 +22,12 @@ layout: default
 <section id="album">
   <div class="section-wrap fade-in album-wrap">
     <h2 class="album-line">1st Full Album — DELUSION — OUT NOW</h2>
-    <img class="album-teaser" src="{{ site.baseurl }}/assets/images/DELUSION_TEASER2.png" alt="DELRIUM 1st Full Album DELUSION — 2026.08.24 Release" onclick="openPosterModal(this.src)" style="cursor:pointer" />
     <div class="album-mv">
-      <iframe loading="lazy" src="https://www.youtube.com/embed/busSgfNS_rY" title="[MV] DELRIUM - Scapegoat"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <button type="button" class="video-thumb" data-video-id="busSgfNS_rY" aria-label="Play [MV] DELRIUM - Scapegoat">
+        <img src="https://i.ytimg.com/vi/busSgfNS_rY/maxresdefault.jpg" alt="[MV] DELRIUM - Scapegoat" loading="lazy" />
+        <span class="video-play" aria-hidden="true"></span>
+      </button>
     </div>
-    <iframe class="album-player" loading="lazy" title="DELUSION by DELRIUM — Bandcamp"
-      src="https://bandcamp.com/EmbeddedPlayer/album=2280871481/size=large/bgcol=0d0d0d/linkcol=c0392b/artwork=small/tracklist=false/transparent=true/">
-      <a href="{{ site.streaming.bandcamp }}">DELUSION by DELRIUM</a>
-    </iframe>
   </div>
 </section>
 
@@ -120,6 +116,36 @@ layout: default
   </div>
 </section>
 
+<!-- STREAMING -->
+<section id="streaming">
+  <div class="section-wrap fade-in">
+    <h2 class="section-title">Streaming</h2>
+    <div class="section-line"></div>
+    <div class="stream-flex">
+      <img class="stream-cover" src="{{ site.baseurl }}/assets/images/delusion_cover.jpg" alt="DELRIUM 1st Full Album DELUSION — album cover" onclick="openPosterModal(this.src)" style="cursor:pointer" />
+      <div class="stream-right">
+        <p class="stream-sub">1st Full Album 「DELUSION」</p>
+        <div class="stream-grid">
+          <a class="stream-btn" href="{{ site.streaming.spotify }}" target="_blank" aria-label="Spotify"><i class="fa-brands fa-spotify"></i><span>Spotify</span></a>
+          <a class="stream-btn" href="{{ site.streaming.apple_music }}" target="_blank" aria-label="Apple Music"><i class="fa-brands fa-apple"></i><span>Apple Music</span></a>
+          <a class="stream-btn" href="{{ site.streaming.youtube_music }}" target="_blank" aria-label="YouTube Music"><i class="fa-brands fa-youtube"></i><span>YouTube Music</span></a>
+          <a class="stream-btn" href="{{ site.streaming.bandcamp }}" target="_blank" aria-label="Bandcamp"><i class="fa-brands fa-bandcamp"></i><span>Bandcamp</span></a>
+          <a class="stream-btn" href="{{ site.streaming.melon }}" target="_blank" aria-label="Melon"><i class="fa-solid fa-music"></i><span>Melon</span></a>
+          <a class="stream-btn" href="{{ site.streaming.genie }}" target="_blank" aria-label="Genie"><i class="fa-solid fa-compact-disc"></i><span>Genie</span></a>
+          <a class="stream-btn" href="{{ site.streaming.bugs }}" target="_blank" aria-label="Bugs"><i class="fa-solid fa-headphones"></i><span>Bugs</span></a>
+          <a class="stream-btn" href="{{ site.streaming.flo }}" target="_blank" aria-label="FLO"><i class="fa-solid fa-wave-square"></i><span>FLO</span></a>
+          <a class="stream-btn" href="{{ site.streaming.vibe }}" target="_blank" aria-label="VIBE"><i class="fa-solid fa-record-vinyl"></i><span>VIBE</span></a>
+          <a class="stream-btn" href="{{ site.streaming.tidal }}" target="_blank" aria-label="TIDAL"><i class="fa-solid fa-water"></i><span>TIDAL</span></a>
+          <a class="stream-btn" href="{{ site.streaming.deezer }}" target="_blank" aria-label="Deezer"><i class="fa-brands fa-deezer"></i><span>Deezer</span></a>
+          <a class="stream-btn" href="{{ site.streaming.anghami }}" target="_blank" aria-label="Anghami"><i class="fa-solid fa-play"></i><span>Anghami</span></a>
+          <a class="stream-btn" href="{{ site.streaming.amazon }}" target="_blank" aria-label="Amazon Music"><i class="fa-brands fa-amazon"></i><span>Amazon Music</span></a>
+          <a class="stream-btn" href="{{ site.streaming.all_platforms }}" target="_blank" aria-label="All Platforms"><i class="fa-solid fa-link"></i><span>All Platforms</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- VIDEO -->
 <section id="video">
   <div class="section-wrap fade-in">
@@ -138,31 +164,6 @@ layout: default
         </div>
       </div>
       {% endfor %}
-    </div>
-  </div>
-</section>
-
-<!-- STREAMING -->
-<section id="streaming">
-  <div class="section-wrap fade-in">
-    <h2 class="section-title">Streaming</h2>
-    <div class="section-line"></div>
-    <p class="stream-sub">1st Full Album 「DELUSION」</p>
-    <div class="stream-grid">
-      <a class="stream-btn" href="{{ site.streaming.spotify }}" target="_blank" aria-label="Spotify"><i class="fa-brands fa-spotify"></i><span>Spotify</span></a>
-      <a class="stream-btn" href="{{ site.streaming.apple_music }}" target="_blank" aria-label="Apple Music"><i class="fa-brands fa-apple"></i><span>Apple Music</span></a>
-      <a class="stream-btn" href="{{ site.streaming.youtube_music }}" target="_blank" aria-label="YouTube Music"><i class="fa-brands fa-youtube"></i><span>YouTube Music</span></a>
-      <a class="stream-btn" href="{{ site.streaming.bandcamp }}" target="_blank" aria-label="Bandcamp"><i class="fa-brands fa-bandcamp"></i><span>Bandcamp</span></a>
-      <a class="stream-btn" href="{{ site.streaming.melon }}" target="_blank" aria-label="Melon"><i class="fa-solid fa-music"></i><span>Melon</span></a>
-      <a class="stream-btn" href="{{ site.streaming.genie }}" target="_blank" aria-label="Genie"><i class="fa-solid fa-compact-disc"></i><span>Genie</span></a>
-      <a class="stream-btn" href="{{ site.streaming.bugs }}" target="_blank" aria-label="Bugs"><i class="fa-solid fa-headphones"></i><span>Bugs</span></a>
-      <a class="stream-btn" href="{{ site.streaming.flo }}" target="_blank" aria-label="FLO"><i class="fa-solid fa-wave-square"></i><span>FLO</span></a>
-      <a class="stream-btn" href="{{ site.streaming.vibe }}" target="_blank" aria-label="VIBE"><i class="fa-solid fa-record-vinyl"></i><span>VIBE</span></a>
-      <a class="stream-btn" href="{{ site.streaming.tidal }}" target="_blank" aria-label="TIDAL"><i class="fa-solid fa-water"></i><span>TIDAL</span></a>
-      <a class="stream-btn" href="{{ site.streaming.deezer }}" target="_blank" aria-label="Deezer"><i class="fa-brands fa-deezer"></i><span>Deezer</span></a>
-      <a class="stream-btn" href="{{ site.streaming.anghami }}" target="_blank" aria-label="Anghami"><i class="fa-solid fa-play"></i><span>Anghami</span></a>
-      <a class="stream-btn" href="{{ site.streaming.amazon }}" target="_blank" aria-label="Amazon Music"><i class="fa-brands fa-amazon"></i><span>Amazon Music</span></a>
-      <a class="stream-btn" href="{{ site.streaming.all_platforms }}" target="_blank" aria-label="All Platforms"><i class="fa-solid fa-link"></i><span>All Platforms</span></a>
     </div>
   </div>
 </section>
