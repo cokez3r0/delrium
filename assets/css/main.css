@@ -602,12 +602,6 @@ nav {
   margin-bottom: 1.2rem;
 }
 
-@media (max-width: 720px) {
-  .stream-grid { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: .5rem; }
-  .stream-btn { padding: .7rem .4rem; }
-  .stream-sub { font-size: 0.75rem; }
-}
-
 .stream-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -633,6 +627,12 @@ nav {
 .stream-btn i { font-size: 1.4rem; }
 
 .stream-btn:hover { border-color: var(--red); color: #fff; }
+
+@media (max-width: 720px) {
+  .stream-grid { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: .5rem; }
+  .stream-btn { padding: .7rem .4rem; }
+  .stream-sub { font-size: 0.75rem; }
+}
 
 /* ── GUESTBOOK ── */
 .guestbook-form {
