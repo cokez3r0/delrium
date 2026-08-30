@@ -13,15 +13,22 @@ social:
   youtube:   "https://www.youtube.com/@banddelrium"
   email:     "band.delrium@gmail.com"
 
+# DELUSION (1st Full Album) links
 streaming:
-  bandcamp:    "https://delrium.bandcamp.com/album/delusion"
-  spotify:     "https://open.spotify.com/artist/0Eff7ox1Ac78Uh7Z3UgUpN"
-  melon:       "https://www.melon.com/artist/timeline.htm?artistId=3116709"
-  apple_music: "https://music.apple.com/kr/artist/delrium/1637030648"
-  genie:       "http://genie.co.kr/YRSYA1"
-  bugs:        "https://music.bugs.co.kr/artist/20196230"
-  flo:         "https://www.music-flo.com/detail/artist/408125034/track?sortType=POPULARITY&roleType=ALL"
-  vibe:        "https://vibe.naver.com/artist/5666625"
+  bandcamp:      "https://delrium.bandcamp.com/album/delusion"
+  spotify:       "https://open.spotify.com/album/1925yEgU9bg5mr6EqK81Y7"
+  apple_music:   "https://music.apple.com/US/album/6800615290?ls=1"
+  youtube_music: "https://music.youtube.com/playlist?list=OLAK5uy_nO_NBrk4aMyB1xSA5vgzr3tBQJVfffRWA"
+  melon:         "https://www.melon.com/album/detail.htm?albumId=14469235"
+  genie:         "https://www.genie.co.kr/detail/albumInfo?axnm=88039809"
+  bugs:          "https://music.bugs.co.kr/album/20834490"
+  flo:           "https://www.music-flo.com/detail/album/461581252/albumtrack"
+  vibe:          "https://vibe.naver.com/album/38487722"
+  tidal:         "https://listen.tidal.com/album/551662595"
+  deezer:        "https://www.deezer.com/album/1052274132"
+  anghami:       "https://play.anghami.com/album/1097493227"
+  amazon:        "https://www.amazon.com/dp/B0HDZ4PGS9"
+  all_platforms: "http://linksalad.net/Ee3ulCWi5_"
 
 plugins:
   - jekyll-seo-tag

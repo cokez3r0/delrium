@@ -250,15 +250,32 @@
 
 - month: October 2026
   shows:
+    - date: "10/4"
+      day: "Sun"
+      venue: "@Freebird"
+      popup:
+        title: "2026.10.04 (SUN) @Freebird"
+        info: |
+          Details TBA. Stay tuned.
     - date: "10/24"
       day: "Sat"
-      title: "델리움 1집 쇼케이스"
+      title: "델리움 1집 단독 쇼케이스"
       venue: "@HUKEZ"
       popup:
-        title: "2026.10.24 (SAT) @HUKEZ"
+        title: "2026.10.24 (SAT) 델리움 1집 단독 쇼케이스 @HUKEZ"
         info: |
-          詳細未定。でも、お楽しみに。
-          something special is coming.
+          DELRIUM 1st Full Album 「DELUSION」 Showcase
+          with 급한노새
+
+          Details TBA. Stay tuned.
+    - date: "10/31"
+      day: "Sat"
+      title: "할로윈 특별공연"
+      venue: "@Hoi Polloi Nowon"
+      popup:
+        title: "2026.10.31 (SAT) 할로윈 특별공연 @Hoi Polloi Nowon"
+        info: |
+          Halloween Special Live
 
           Details TBA. Stay tuned.
 
