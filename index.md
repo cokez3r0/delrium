@@ -21,10 +21,10 @@ layout: default
 <!-- ALBUM -->
 <section id="album">
   <div class="section-wrap fade-in album-wrap">
-    <h2 class="album-line">Scapegoat MV — OUT NOW</h2>
+    <h2 class="album-line">Amnesia MV — OUT NOW</h2>
     <div class="album-mv">
-      <button type="button" class="video-thumb" data-video-id="busSgfNS_rY" aria-label="Play [MV] DELRIUM - Scapegoat">
-        <img src="https://i.ytimg.com/vi/busSgfNS_rY/maxresdefault.jpg" alt="[MV] DELRIUM - Scapegoat" loading="lazy" />
+      <button type="button" class="video-thumb" data-video-id="2CGqLoHZTDk" aria-label="Play DELRIUM - Amnesia [OFFICIAL MUSIC VIDEO]">
+        <img src="https://i.ytimg.com/vi/2CGqLoHZTDk/maxresdefault.jpg" alt="DELRIUM - Amnesia [OFFICIAL MUSIC VIDEO]" loading="lazy" />
         <span class="video-play" aria-hidden="true"></span>
       </button>
     </div>
@@ -165,20 +165,6 @@ layout: default
       </div>
       {% endfor %}
     </div>
-  </div>
-</section>
-
-<!-- GUESTBOOK -->
-<section id="guestbook">
-  <div class="section-wrap fade-in">
-    <h2 class="section-title">Guestbook</h2>
-    <div class="section-line"></div>
-    <form class="guestbook-form" id="gb-form">
-      <input class="gb-input" id="gb-name" type="text" placeholder="이름" maxlength="30" required />
-      <textarea class="gb-input" id="gb-msg" placeholder="메시지를 남겨주세요" maxlength="300" required></textarea>
-      <button class="btn btn-primary" id="gb-submit" type="submit">남기기</button>
-    </form>
-    <div class="gb-list" id="gb-list"></div>
   </div>
 </section>
 

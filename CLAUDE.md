@@ -31,10 +31,9 @@ This is a **single-page Jekyll site**. Almost everything renders from one templa
 
 ### Page composition
 
-- `index.md` — the only page. Each `<section>` (Hero, About, Members, Schedule, Video, Streaming, Guestbook, Contact) is hand-written HTML inside the markdown, iterating over `site.data.*` for repeated content.
+- `index.md` — the only page. Each `<section>` (Hero, Album MV, About, Members, Schedule, Streaming, Video, Contact) is hand-written HTML inside the markdown, iterating over `site.data.*` for repeated content.
 - `_layouts/default.html` — the only layout. Wraps `index.md` with nav/footer and contains **all client-side JavaScript inline** (hamburger, fade-in observer, schedule popups, poster modal, calendar render, past-show pruning). When adding interactive behavior, this is where it goes — there is no separate JS bundle.
 - `assets/css/main.css` — the only stylesheet.
-- `assets/js/guestbook.js` — the only external JS file (Supabase client).
 
 ### Data-driven content
 
@@ -51,12 +50,6 @@ The schedule is rendered three ways from the same `_data/schedule.yml`:
 1. **Calendar grid** (in `_layouts/default.html`, IIFE near the bottom): marks show dates; for **past** dates with a poster, clicking the day opens the poster modal.
 2. **Month list** below the calendar: each `.show-row` carries `data-show-year` / `data-show-md`. A small script at the end of `_layouts/default.html` **removes past show rows on page load** and removes month blocks that end up empty. This is intentional — don't try to "fix" missing past shows by re-adding them; if you need to display history, design a separate section.
 3. The `popup` vs `ticket` vs nothing decision is made in `index.md`'s Liquid (`{% if show.popup %}` … `{% elsif show.ticket %}`).
-
-### Guestbook (Supabase)
-
-- `_config.yml` exposes `supabase_url` and `supabase_anon_key`; `_layouts/default.html` injects them to `window.SUPABASE_URL` / `window.SUPABASE_ANON_KEY` via Liquid.
-- `assets/js/guestbook.js` reads from / inserts into the `guestbook` table. New entries are **not shown immediately** — moderation is enforced server-side (RLS); the client just shows a "확인 후 게시됩니다" notice.
-- The anon key in `_config.yml` is intentionally public (Supabase anon keys are designed to be client-side); RLS on the `guestbook` table is what actually protects writes/visibility. Don't move it to a secret.
 
 ### Deployment
 
