@@ -1,31 +1,33 @@
-- id: "AltK89Vh6ns"
-  title: "DELRIUM Live at Club Sharp Korea (May 7, 2026)\nUnited We Stand Vol. 8"
-  channel: "Diazable Music Breakdown"
+# Newest first (YouTube upload date)
 
-- id: "WHx6ovH_LDc"
-  title: "Amnesia [2025 Taiwan Live]"
-  channel: "DELRIUM Official"
+- id: "busSgfNS_rY"            # 2026-08-24
+  title: "[MV] DELRIUM - Scapegoat"
+  channel: "Mirrorball Music"
 
-- id: "pxZJUf-FN18"
-  title: "MetalRemains Interview - Asia Metal Festival"
-  channel: "Metal Remains"
-
-- id: "PRkFry4YNAU"
-  title: "DELRIUM(델리움) - Lucifer [Bass Playthrough]"
-  channel: "DELRIUM"
-
-- id: "KYR6lYLNNhg"
-  title: "DELRIUM(델리움) - Lucifer [Guitar Playthrough]"
-  channel: "DELRIUM"
-
-- id: "cxx3rh6_oJs"
-  title: "DELRIUM(델리움) - ONE DAY (회색기류 OST)"
-  channel: "DELRIUM"
-
-- id: "RHdyMeNP0lo"
+- id: "RHdyMeNP0lo"            # 2026-08-17
   title: "「Amnesia」 Official MV Teaser"
   channel: "DELRIUM Official"
 
-- id: "busSgfNS_rY"
-  title: "[MV] DELRIUM - Scapegoat"
-  channel: "Mirrorball Music"
+- id: "AltK89Vh6ns"            # 2026-05-08
+  title: "DELRIUM Live at Club Sharp Korea (May 7, 2026)\nUnited We Stand Vol. 8"
+  channel: "Diazable Music Breakdown"
+
+- id: "pxZJUf-FN18"            # 2026-02-02
+  title: "MetalRemains Interview - Asia Metal Festival"
+  channel: "Metal Remains"
+
+- id: "WHx6ovH_LDc"            # 2026-01-13
+  title: "Amnesia [2025 Taiwan Live]"
+  channel: "DELRIUM Official"
+
+- id: "PRkFry4YNAU"            # 2025-07-06
+  title: "DELRIUM(델리움) - Lucifer [Bass Playthrough]"
+  channel: "DELRIUM"
+
+- id: "KYR6lYLNNhg"            # 2025-06-26
+  title: "DELRIUM(델리움) - Lucifer [Guitar Playthrough]"
+  channel: "DELRIUM"
+
+- id: "cxx3rh6_oJs"            # 2024-04-22
+  title: "DELRIUM(델리움) - ONE DAY (회색기류 OST)"
+  channel: "DELRIUM"
