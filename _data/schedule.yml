@@ -270,10 +270,10 @@
           Details TBA. Stay tuned.
     - date: "10/31"
       day: "Sat"
-      title: "할로윈 특별공연"
+      title: "Halloween Visual Kei Special"
       venue: "@Hoi Polloi Nowon"
       popup:
-        title: "2026.10.31 (SAT) 할로윈 특별공연 @Hoi Polloi Nowon"
+        title: "2026.10.31 (SAT) Halloween Visual Kei Special @Hoi Polloi Nowon"
         info: |
           Halloween Special Live
 
@@ -283,12 +283,13 @@
   shows:
     - date: "11/7"
       day: "Sat"
-      title: "메탈해적"
-      venue: "@TBA"
+      title: "Metal Pirates"
+      venue: "@Busan Indie Station"
     - date: "11/14"
       day: "Sat"
-      venue: "@퍼플홀"
+      title: "Purple Hall 3rd Anniversary"
+      venue: "@Purple Hall"
       popup:
-        title: "2026.11.14 (SAT) @퍼플홀"
+        title: "2026.11.14 (SAT) Purple Hall 3rd Anniversary @Purple Hall"
         info: |
           Details TBA. Stay tuned.
